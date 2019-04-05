@@ -1,0 +1,7 @@
+func Main
+	call Other
+end func
+
+func Other
+	call Main
+end func

@@ -1,0 +1,9 @@
+[package]
+name = "TSVM"
+version = "0.1.0"
+authors = ["Lightium <hyperrexbg@gmail.com>"]
+
+[dependencies]
+bincode = "0.6"
+rustc-serialize = "*"
+libloading = "0.5.0"

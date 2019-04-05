@@ -1,0 +1,4 @@
+func Main
+	none
+	jmp 0
+end func

@@ -1,0 +1,23 @@
+func Main
+
+var num_1 IntType = 15
+var num_2 IntType = 21
+
+var is_equal StrType = "num_1 is equal to num_2"
+var is_gtr StrType = "num_1 is greater than num_2"
+var is_lss StrType = "num_1 is less than num_2"
+
+eq num_1 num_2
+jmp 15
+
+gtr num_1 num_2
+jmp 16
+
+lss num_1 num_2
+jmp 17
+
+print is_equal
+print is_gtr
+print is_lss
+
+end func

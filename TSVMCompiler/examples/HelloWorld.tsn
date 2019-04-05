@@ -1,0 +1,4 @@
+func Main
+	var msg StrType = "Hello, World!"
+	print msg
+end func
