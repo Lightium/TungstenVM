@@ -206,11 +206,8 @@ pub fn run_fn(name: String, mut res: bool /* ! res is a register ! */, funcs: Ve
 
                 let parsed_2 = var_2[2].parse::<i32>().expect(
                     &format!("ERROR: Variable {} is not a valid number!", var_2[0]));
-
-                let mut bool_1 = if parsed_1 == 0 { false } else { true };
-                let mut bool_2 = if parsed_2 == 0 { false } else { true };
-
-                res = bool_1 | bool_2;
+                
+                res = parsed_1 | parsed_2;
             },
 
             Opcodes::Opcodes::And => {
@@ -223,10 +220,7 @@ pub fn run_fn(name: String, mut res: bool /* ! res is a register ! */, funcs: Ve
                 let parsed_2 = var_2[2].parse::<i32>().expect(
                     &format!("ERROR: Variable {} is not a valid number!", var_2[0]));
 
-                let mut bool_1 = if parsed_1 == 0 { false } else { true };
-                let mut bool_2 = if parsed_2 == 0 { false } else { true };
-
-                res = bool_1 & bool_2;
+                res = parsed_1 & parsed_2;
             },
 
             Opcodes::Opcodes::Res => {
