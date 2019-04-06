@@ -1,7 +1,7 @@
 [package]
 name = "TSVM"
 version = "0.1.0"
-authors = ["Lightium <hyperrexbg@gmail.com>"]
+authors = ["Lightium"]
 
 [dependencies]
 bincode = "0.6"
